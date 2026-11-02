@@ -1,0 +1,10 @@
+{
+  "arrival_rate": 0.7,
+  "service_rate": 0.5,
+  "servers": 2,
+  "customers": 50000,
+  "warmup": 5000,
+  "seed": 42,
+  "target_wait_minutes": 1.0,
+  "max_servers": 5
+}

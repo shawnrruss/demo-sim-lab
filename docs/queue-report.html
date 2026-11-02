@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coffee shop queue / staffing decision</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #edf3f5; color: #172b3a;
+        font: 16px/1.5 system-ui, sans-serif; }
+main { max-width: 940px; margin: 24px auto; padding: 30px; background: white;
+        border-top: 6px solid #087f8c; border-radius: 12px; }
+h1 { margin: 0; font-size: 30px; } h2 { font-size: 19px; margin-bottom: 8px; }
+.eyebrow { color: #087f8c; font-weight: 700; letter-spacing: .12em; }
+dl { display: flex; flex-wrap: wrap; gap: 12px; margin: 22px 0; }
+.metric { flex: 1; min-width: 170px; padding: 14px; background: #edf7f7; }
+dt { font-size: 14px; } dd { margin: 4px 0 0; font-size: 24px; font-weight: 700; }
+svg { display: block; width: 100%; max-height: 280px; }
+svg text { font: 13px system-ui, sans-serif; fill: #536171; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 7px; border-bottom: 1px solid #dce5e9; }
+footer { font-size: 13px; color: #536171; margin-top: 20px; }
+@media print { body { background: white; } main { margin: 0; padding: 16px; } }
+</style></head><body><main>
+<div class="eyebrow">SIMLAB / SIMULATED DATA ONLY</div>
+<h1>Coffee shop queue / staffing decision</h1><p>FCFS; exponential arrivals (0.7/min) and service (0.5/min/server). 50,000 measured arrivals after 5,000 warm-up arrivals per scenario; seed 42. Search: 1–5 servers; unstable counts excluded. Recommendation uses a strict mean-wait threshold and one run per count.</p><dl><div class="metric"><dt>Mean wait / 2 servers</dt><dd>2.028 min</dd></div><div class="metric"><dt>Servers for wait &lt; 1 min</dt><dd>3</dd></div><div class="metric"><dt>Offered utilization</dt><dd>70.0%</dd></div></dl>
+<svg viewBox="0 0 620 240" role="img" aria-label="Wait in minutes"><title>Wait in minutes</title><g fill="#087f8c"><rect x="55" y="30.00" width="23" height="160.00"><title>29248 samples</title></rect><rect x="80" y="157.54" width="23" height="32.46"><title>5933 samples</title></rect><rect x="105" y="166.58" width="23" height="23.42"><title>4281 samples</title></rect><rect x="130" y="173.63" width="23" height="16.37"><title>2993 samples</title></rect><rect x="155" y="178.56" width="23" height="11.44"><title>2091 samples</title></rect><rect x="180" y="181.57" width="23" height="8.43"><title>1541 samples</title></rect><rect x="205" y="183.74" width="23" height="6.26"><title>1145 samples</title></rect><rect x="230" y="185.56" width="23" height="4.44"><title>812 samples</title></rect><rect x="255" y="186.91" width="23" height="3.09"><title>565 samples</title></rect><rect x="280" y="187.76" width="23" height="2.24"><title>409 samples</title></rect><rect x="305" y="188.31" width="23" height="1.69"><title>309 samples</title></rect><rect x="330" y="188.88" width="23" height="1.12"><title>205 samples</title></rect><rect x="355" y="189.15" width="23" height="0.85"><title>156 samples</title></rect><rect x="380" y="189.42" width="23" height="0.58"><title>106 samples</title></rect><rect x="405" y="189.58" width="23" height="0.42"><title>77 samples</title></rect><rect x="430" y="189.76" width="23" height="0.24"><title>43 samples</title></rect><rect x="455" y="189.76" width="23" height="0.24"><title>43 samples</title></rect><rect x="480" y="189.87" width="23" height="0.13"><title>24 samples</title></rect><rect x="505" y="189.92" width="23" height="0.08"><title>14 samples</title></rect><rect x="530" y="189.97" width="23" height="0.03"><title>5 samples</title></rect></g><path d="M55 25 V190 H555" fill="none" stroke="#536171"/><text x="55" y="212">0.00</text><text x="555" y="212" text-anchor="end">23.62</text><text x="305" y="235" text-anchor="middle">Wait in minutes</text><text x="12" y="18">Count</text></svg><h2>Stable staffing scenarios</h2><table><thead><tr><th>Servers</th><th>Mean wait (min)</th><th>Mean total time (min)</th><th>Utilization</th></tr></thead><tbody><tr><td>2</td><td>2.028</td><td>4.035</td><td>70.0%</td></tr><tr><td>3</td><td>0.274</td><td>2.281</td><td>46.7%</td></tr><tr><td>4</td><td>0.052</td><td>2.059</td><td>35.0%</td></tr><tr><td>5</td><td>0.011</td><td>2.018</td><td>28.0%</td></tr></tbody></table>
+<footer>Simulated data only. Seeded scenario estimates, not operational guarantees.
+No external assets, scripts, or tracking.</footer>
+</main></body></html>

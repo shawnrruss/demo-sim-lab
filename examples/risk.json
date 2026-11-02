@@ -1,0 +1,10 @@
+{
+  "tasks": [
+    {"name": "Discovery", "low": 2, "mode": 3, "high": 6},
+    {"name": "Build", "low": 5, "mode": 8, "high": 14},
+    {"name": "Validation", "low": 2, "mode": 4, "high": 8}
+  ],
+  "trials": 50000,
+  "seed": 42,
+  "start_date": "2026-11-02"
+}
