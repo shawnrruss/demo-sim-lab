@@ -59,8 +59,11 @@ up to whole days and include weekends. Outputs: `out/risk/risk.html` and
 Open the [saved risk report](docs/risk-report.html) in a browser.
 
 Both reports are self-contained HTML with inline SVG charts, no JavaScript or
-external assets. HTML previews are retained instead of PNG screenshots because
-local headless Chrome could not initialize its GPU process in the sandbox.
+external assets.
+
+![Queue report](docs/queue-report.png)
+
+![Risk report](docs/risk-report.png)
 
 ## Configure and validate
 
